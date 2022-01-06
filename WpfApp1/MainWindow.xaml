@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="RESEARCHER LIST:" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Filter by Name" HorizontalAlignment="Center" Height="67" VerticalAlignment="Center" Width="140"/>
+            <TextBox Grid.Column="1" HorizontalAlignment="Center" Height="67" Text="Enter name to search:" TextWrapping="Wrap" VerticalAlignment="Center" Width="220"/>
+            <ListBox Grid.Column="2" HorizontalAlignment="Center" Height="67" VerticalAlignment="Center" Width="220"/>
+            <Button Content="Achievement Reports" Grid.Column="3" HorizontalAlignment="Left" Height="65" Margin="7,12,0,0" VerticalAlignment="Top" Width="143"/>
+        </Grid>
+        <TextBlock HorizontalAlignment="Center" Height="327" Grid.Row="1" Text="Researcher List" TextWrapping="Wrap" VerticalAlignment="Center" Width="780"/>
+
+
+
+
+    </Grid>
+</Window>

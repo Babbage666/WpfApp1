@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Net;
 using System.Linq;
@@ -19,8 +20,11 @@ namespace WpfApp1.Control
     public class ResearcherController
     {
 
-        List<Researcher> ResearcherList=new List<Researcher>();
-        List<Researcher> filteredList = new List<Researcher>();
+        //List<Researcher> ResearcherList=new List<Researcher>();
+        //List<Researcher> filteredList = new List<Researcher>();
+        public ObservableCollection<Researcher> ResearcherList = new ObservableCollection<Researcher>();
+        public ObservableCollection<Researcher> filteredList = new ObservableCollection<Researcher>();
+
         public ResearcherController()
         {
                   ResearcherList = LoadResearchers();
@@ -87,11 +91,11 @@ namespace WpfApp1.Control
            
         }
 
-        public List<Researcher> LoadResearchers()
+        public ObservableCollection<Researcher> LoadResearchers()
         { 
             
             ERDAdapter Adapter1 = new ERDAdapter();
-            List<Researcher> tempList = new List<Researcher>();
+            ObservableCollection<Researcher> tempList = new ObservableCollection<Researcher>();
             tempList = Adapter1.fetchBasicResearcherDetails();
 
             return tempList;

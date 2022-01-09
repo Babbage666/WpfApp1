@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WpfApp1.Research;
+using WpfApp1.Control;
+using WpfApp1.Database;
 
 namespace WpfApp1.Research
 {

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApp1.Research;
+using WpfApp1.Control;
+using WpfApp1.Database;
 
 namespace WpfApp1
 {
@@ -23,6 +27,7 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+            ResearcherController rc=new ResearcherController();
         }
     }
 }

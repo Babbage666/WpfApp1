@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Data;
 using System.Linq;
 using System.Text;
@@ -27,11 +28,11 @@ namespace WpfApp1.Database
         }
 
 
-        public List<Research.Researcher> fetchBasicResearcherDetails()
+        public ObservableCollection<Research.Researcher> fetchBasicResearcherDetails()
         {
             conn = GetConnection();
            
-            List<Researcher> ResearcherList = new List<Researcher>();
+            ObservableCollection<Researcher> ResearcherList = new ObservableCollection<Researcher>();
             MySqlDataReader rdr = null;
             
 
